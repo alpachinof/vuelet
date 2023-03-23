@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'vazir';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/Vazirmatn-Medium.woff2');
+}

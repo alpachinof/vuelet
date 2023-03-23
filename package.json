@@ -8,6 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.12",
+    "@heroicons/vue": "^1.0.6",
+    "@tailwindcss/forms": "^0.5.3",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
