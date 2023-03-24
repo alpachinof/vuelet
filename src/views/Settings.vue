@@ -119,7 +119,7 @@
     <!-- Static sidebar for desktop -->
 
     <!-- Content area -->
-    <div class="md:pr-64">
+    <div class="">
       <div class="max-w-4xl mx-auto flex flex-col md:px-8 xl:px-0">
         <main class="flex-1">
           <div class="relative max-w-4xl mx-auto md:px-8 xl:px-0">
