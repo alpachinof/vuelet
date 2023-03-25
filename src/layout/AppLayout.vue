@@ -61,10 +61,10 @@
               aria-label="Sidebar"
             >
               <div class="px-2 space-y-1">
-                <a
+                <RouterLink
                   v-for="item in navigation"
                   :key="item.name"
-                  :href="item.href"
+                  :to="item.to"
                   :class="[
                     item.current
                       ? 'bg-cyan-800 text-white'
@@ -79,7 +79,7 @@
                     aria-hidden="true"
                   />
                   {{ item.name }}
-                </a>
+                </RouterLink>
               </div>
               <div class="mt-6 pt-6">
                 <div class="px-2 space-y-1">
@@ -123,10 +123,10 @@
           aria-label="Sidebar"
         >
           <div class="px-2 space-y-1">
-            <a
+            <RouterLink
               v-for="item in navigation"
               :key="item.name"
-              :href="item.href"
+              :to="item.to"
               :class="[
                 item.current
                   ? 'bg-cyan-800 text-white'
@@ -141,7 +141,7 @@
                 aria-hidden="true"
               />
               {{ item.name }}
-            </a>
+            </RouterLink>
           </div>
           <div class="mt-6 pt-6">
             <div class="px-2 space-y-1">
@@ -282,6 +282,7 @@
       </div>
     </div>
   </div>
+  <RouterView class="lg:pr-64 mt-8" />
 </template>
 
 <script setup>
@@ -320,17 +321,17 @@
   } from '@heroicons/vue/solid';
 
   const navigation = [
-    { name: 'خانه', href: '/', icon: HomeIcon, current: true },
+    { name: 'خانه', to: '/', icon: HomeIcon, current: true },
     {
       name: 'جدول ها',
-      href: '/tables/simple',
+      to: '/tables/plain',
       icon: ClockIcon,
       current: false,
     },
-    { name: 'فرم ها', href: '/forms', icon: ScaleIcon, current: false },
-    { name: 'کامپوننت ها', href: '#', icon: CreditCardIcon, current: false },
-    { name: ' تقویم', href: '#', icon: UserGroupIcon, current: false },
-    { name: 'صفحه ها', href: '#', icon: DocumentReportIcon, current: false },
+    { name: 'فرم ها', to: '/forms', icon: ScaleIcon, current: false },
+    { name: 'کامپوننت ها', to: '#', icon: CreditCardIcon, current: false },
+    { name: ' تقویم', to: '/calendar', icon: UserGroupIcon, current: false },
+    { name: 'صفحه ها', to: '#', icon: DocumentReportIcon, current: false },
   ];
   const secondaryNavigation = [
     { name: 'تنظیمات', href: '/settings', icon: CogIcon },
