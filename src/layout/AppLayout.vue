@@ -62,24 +62,128 @@
             >
               <div class="px-2 space-y-1">
                 <RouterLink
-                  v-for="item in navigation"
-                  :key="item.name"
-                  :to="item.to"
-                  :class="[
-                    item.current
-                      ? 'bg-cyan-800 text-white'
-                      : 'text-cyan-100 hover:text-white hover:bg-cyan-600',
-                    'group flex items-center px-2 py-2 text-base font-medium rounded-md',
-                  ]"
-                  :aria-current="item.current ? 'page' : undefined"
+                  to="/"
+                  class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-base font-medium rounded-md"
                 >
                   <component
-                    :is="item.icon"
-                    class="ml-4 flex-shrink-0 h-6 w-6 text-cyan-200"
+                    :is="ViewGridIcon"
+                    class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500"
                     aria-hidden="true"
                   />
-                  {{ item.name }}
+                  داشبورد
                 </RouterLink>
+                <div class="mx-auto w-full max-w-md rounded-2xl">
+                  <Disclosure v-slot="{ open, close }">
+                    <DisclosureButton
+                      class="w-full justify-start rounded-lg text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium"
+                    >
+                      <component
+                        :is="TableIcon"
+                        class="ml-4 flex-shrink-0 h-7 w-6 text-gray-500"
+                        aria-hidden="true"
+                      />
+                      <span>جدول ها</span>
+                      <ChevronUpIcon
+                        :class="open ? 'rotate-180 transform' : ''"
+                        class="h-5 w-5 text-purple-500 mr-auto"
+                      />
+                    </DisclosureButton>
+                    <DisclosurePanel
+                      class="px-2 pr-8 pt-4 pb-2 text-sm text-gray-500"
+                    >
+                      <RouterLink
+                        @click="close"
+                        to="/tables/plain"
+                        class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                      >
+                        جدول ساده
+                      </RouterLink>
+                      <RouterLink
+                        @click="close"
+                        to="/tables/avatar"
+                        class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                      >
+                        جدول پیشرفته
+                      </RouterLink>
+                    </DisclosurePanel>
+                  </Disclosure>
+                </div>
+                <RouterLink
+                  to="/forms"
+                  class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                >
+                  <component
+                    :is="PencilAltIcon"
+                    class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500"
+                    aria-hidden="true"
+                  />
+                  فرم ها
+                </RouterLink>
+                <RouterLink
+                  to="/forms"
+                  class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                >
+                  <component
+                    :is="TemplateIcon"
+                    class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500"
+                    aria-hidden="true"
+                  />
+                  کامپوننت ها
+                </RouterLink>
+                <RouterLink
+                  to="/calendar"
+                  class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                >
+                  <component
+                    :is="CalendarIcon"
+                    class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500"
+                    aria-hidden="true"
+                  />
+                  تقویم
+                </RouterLink>
+                <div class="mx-auto w-full max-w-md rounded-2xl">
+                  <Disclosure v-slot="{ open, close }">
+                    <DisclosureButton
+                      class="w-full justify-start rounded-lg text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium"
+                    >
+                      <component
+                        :is="DocumentDuplicateIcon"
+                        class="ml-4 flex-shrink-0 h-7 w-6 text-gray-500"
+                        aria-hidden="true"
+                      />
+                      <span>صفحه ها</span>
+                      <ChevronUpIcon
+                        :class="open ? 'rotate-180 transform' : ''"
+                        class="h-5 w-5 text-purple-500 mr-auto"
+                      />
+                    </DisclosureButton>
+                    <DisclosurePanel
+                      class="px-2 pr-8 pt-4 pb-2 text-sm text-gray-500"
+                    >
+                      <RouterLink
+                        @click="close"
+                        to="/404/simple"
+                        class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                      >
+                        404
+                      </RouterLink>
+                      <RouterLink
+                        @click="close"
+                        to="/auth/login"
+                        class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                      >
+                        ورود
+                      </RouterLink>
+                      <RouterLink
+                        @click="close"
+                        to="/auth/register"
+                        class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                      >
+                        ثبت نام
+                      </RouterLink>
+                    </DisclosurePanel>
+                  </Disclosure>
+                </div>
               </div>
               <div class="mt-6 pt-6">
                 <div class="px-2 space-y-1">
@@ -122,26 +226,131 @@
           class="mt-5 flex-1 flex flex-col divide-y divide-cyan-800 overflow-y-auto"
           aria-label="Sidebar"
         >
+          <!-- active class bg-cyan-800 text-white -->
           <div class="px-2 space-y-1">
             <RouterLink
-              v-for="item in navigation"
-              :key="item.name"
-              :to="item.to"
-              :class="[
-                item.current
-                  ? 'bg-cyan-800 text-white'
-                  : 'text-gray-500 hover:text-white hover:bg-cyan-600',
-                'group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md',
-              ]"
-              :aria-current="item.current ? 'page' : undefined"
+              to="/"
+              class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
             >
               <component
-                :is="item.icon"
+                :is="ViewGridIcon"
                 class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500"
                 aria-hidden="true"
               />
-              {{ item.name }}
+              داشبورد
             </RouterLink>
+            <div class="mx-auto w-full max-w-md rounded-2xl bg-white">
+              <Disclosure v-slot="{ open, close }">
+                <DisclosureButton
+                  class="w-full justify-start rounded-lg text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium"
+                >
+                  <component
+                    :is="TableIcon"
+                    class="ml-4 flex-shrink-0 h-7 w-6 text-gray-500"
+                    aria-hidden="true"
+                  />
+                  <span>جدول ها</span>
+                  <ChevronUpIcon
+                    :class="open ? 'rotate-180 transform' : ''"
+                    class="h-5 w-5 text-purple-500 mr-auto"
+                  />
+                </DisclosureButton>
+                <DisclosurePanel
+                  class="px-2 pr-8 pt-4 pb-2 text-sm text-gray-500"
+                >
+                  <RouterLink
+                    @click="close"
+                    to="/tables/plain"
+                    class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                  >
+                    جدول ساده
+                  </RouterLink>
+                  <RouterLink
+                    @click="close"
+                    to="/tables/avatar"
+                    class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                  >
+                    جدول پیشرفته
+                  </RouterLink>
+                </DisclosurePanel>
+              </Disclosure>
+            </div>
+            <RouterLink
+              to="/forms"
+              class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+            >
+              <component
+                :is="PencilAltIcon"
+                class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500"
+                aria-hidden="true"
+              />
+              فرم ها
+            </RouterLink>
+            <RouterLink
+              to="/forms"
+              class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+            >
+              <component
+                :is="TemplateIcon"
+                class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500"
+                aria-hidden="true"
+              />
+              کامپوننت ها
+            </RouterLink>
+            <RouterLink
+              to="/calendar"
+              class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+            >
+              <component
+                :is="CalendarIcon"
+                class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500"
+                aria-hidden="true"
+              />
+              تقویم
+            </RouterLink>
+            <div class="mx-auto w-full max-w-md rounded-2xl bg-white">
+              <Disclosure v-slot="{ open, close }">
+                <DisclosureButton
+                  class="w-full justify-start rounded-lg text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium"
+                >
+                  <component
+                    :is="DocumentDuplicateIcon"
+                    class="ml-4 flex-shrink-0 h-7 w-6 text-gray-500"
+                    aria-hidden="true"
+                  />
+                  <span>صفحه ها</span>
+                  <ChevronUpIcon
+                    :class="open ? 'rotate-180 transform' : ''"
+                    class="h-5 w-5 text-purple-500 mr-auto"
+                  />
+                </DisclosureButton>
+                <DisclosurePanel
+                  class="px-2 pr-8 pt-4 pb-2 text-sm text-gray-500"
+                >
+                  <RouterLink
+                    @click="close"
+                    to="/404/simple"
+                    class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                  >
+                    404
+                  </RouterLink>
+                  <RouterLink
+                    @click="close"
+                    to="/auth/login"
+                    class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                  >
+                    ورود
+                  </RouterLink>
+                  <RouterLink
+                    @click="close"
+                    to="/auth/register"
+                    class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                  >
+                    ثبت نام
+                  </RouterLink>
+                </DisclosurePanel>
+              </Disclosure>
+            </div>
           </div>
           <div class="mt-6 pt-6">
             <div class="px-2 space-y-1">
@@ -296,14 +505,22 @@
     MenuItems,
     TransitionChild,
     TransitionRoot,
+    Disclosure,
+    DisclosureButton,
+    DisclosurePanel,
   } from '@headlessui/vue';
   import {
     BellIcon,
-    ClockIcon,
+    TableIcon,
+    PencilAltIcon,
     CogIcon,
     CreditCardIcon,
     DocumentReportIcon,
+    TemplateIcon,
+    CalendarIcon,
+    DocumentDuplicateIcon,
     HomeIcon,
+    ViewGridIcon,
     MenuAlt1Icon,
     QuestionMarkCircleIcon,
     ScaleIcon,
@@ -315,20 +532,13 @@
     CashIcon,
     CheckCircleIcon,
     ChevronDownIcon,
+    ChevronUpIcon,
     ChevronRightIcon,
     OfficeBuildingIcon,
     SearchIcon,
   } from '@heroicons/vue/solid';
 
   const navigation = [
-    { name: 'خانه', to: '/', icon: HomeIcon, current: true },
-    {
-      name: 'جدول ها',
-      to: '/tables/plain',
-      icon: ClockIcon,
-      current: false,
-    },
-    { name: 'فرم ها', to: '/forms', icon: ScaleIcon, current: false },
     { name: 'کامپوننت ها', to: '#', icon: CreditCardIcon, current: false },
     { name: ' تقویم', to: '/calendar', icon: UserGroupIcon, current: false },
     { name: 'صفحه ها', to: '#', icon: DocumentReportIcon, current: false },

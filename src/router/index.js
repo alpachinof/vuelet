@@ -46,6 +46,24 @@ const router = createRouter({
           name: 'calendar',
           component: () => import('../views/calendar/month.vue'),
         },
+        {
+          path: '/components',
+          name: 'components',
+          component: RouteViewComponent,
+          children: [
+            {
+              name: 'buttons',
+              path: 'buttons',
+              component: () =>
+                import('../views/components/buttons/buttons.vue'),
+            },
+            {
+              name: 'register',
+              path: 'register',
+              component: () => import('../views/auth/register.vue'),
+            },
+          ],
+        },
       ],
     },
     {
@@ -57,11 +75,6 @@ const router = createRouter({
           name: 'simple',
           path: 'simple',
           component: () => import('../views/404/simple.vue'),
-        },
-        {
-          name: 'image',
-          path: 'image',
-          component: () => import('../views/404/image.vue'),
         },
       ],
     },
