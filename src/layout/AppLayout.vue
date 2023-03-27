@@ -286,17 +286,49 @@
               />
               فرم ها
             </RouterLink>
-            <RouterLink
-              to="/forms"
-              class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
-            >
-              <component
-                :is="TemplateIcon"
-                class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500"
-                aria-hidden="true"
-              />
-              کامپوننت ها
-            </RouterLink>
+            <div class="mx-auto w-full max-w-md rounded-2xl bg-white">
+              <Disclosure v-slot="{ open, close }">
+                <DisclosureButton
+                  class="w-full justify-start rounded-lg text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium"
+                >
+                  <component
+                    :is="TemplateIcon"
+                    class="ml-4 flex-shrink-0 h-7 w-6 text-gray-500"
+                    aria-hidden="true"
+                  />
+                  <span>کامپوننت ها</span>
+                  <ChevronUpIcon
+                    :class="open ? 'rotate-180 transform' : ''"
+                    class="h-5 w-5 text-purple-500 mr-auto"
+                  />
+                </DisclosureButton>
+                <DisclosurePanel
+                  class="px-2 pr-8 pt-4 pb-2 text-sm text-gray-500"
+                >
+                  <RouterLink
+                    @click="close"
+                    to="/components/buttons"
+                    class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                  >
+                    دکمه ها
+                  </RouterLink>
+                  <RouterLink
+                    @click="close"
+                    to="/components/cards"
+                    class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                  >
+                    کارت ها
+                  </RouterLink>
+                  <RouterLink
+                    @click="close"
+                    to="/components/notifications"
+                    class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                  >
+                    هشدار ها
+                  </RouterLink>
+                </DisclosurePanel>
+              </Disclosure>
+            </div>
             <RouterLink
               to="/calendar"
               class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
