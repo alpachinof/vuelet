@@ -1,12 +1,10 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <!-- Global notification live region, render this permanently at the end of the document -->
-  <!-- <div
+  <div
     aria-live="assertive"
     class="fixed inset-0 flex items-end px-4 py-6 pointer-events-none sm:p-6 sm:items-start"
   >
     <div class="w-full flex flex-col items-center space-y-4 sm:items-end">
-      
       <transition
         enter-active-class="transform ease-out duration-300 transition"
         enter-from-class="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
@@ -49,7 +47,7 @@
         </div>
       </transition>
     </div>
-  </div> -->
+  </div>
 
   <!-- <div
     aria-live="assertive"
@@ -97,7 +95,7 @@
     </div>
   </div> -->
 
-  <div
+  <!-- <div
     aria-live="assertive"
     class="fixed inset-0 flex items-end px-4 py-6 pointer-events-none sm:p-6 sm:items-start"
   >
@@ -153,7 +151,7 @@
         </div>
       </transition>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script setup>

@@ -326,6 +326,13 @@
                   >
                     هشدار ها
                   </RouterLink>
+                  <RouterLink
+                    @click="close"
+                    to="/components/modals"
+                    class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                  >
+                    مودال ها
+                  </RouterLink>
                 </DisclosurePanel>
               </Disclosure>
             </div>
