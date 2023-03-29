@@ -63,15 +63,19 @@ const router = createRouter({
               component: () => import('../views/components/cards/cards.vue'),
             },
             {
-              name: 'notifications',
-              path: 'notifications',
-              component: () =>
-                import('../views/components/notifications/notifications.vue'),
+              name: 'alerts',
+              path: 'alerts',
+              component: () => import('../views/components/alerts/alerts.vue'),
             },
             {
               name: 'modals',
               path: 'modals',
               component: () => import('../views/components/modals/modals.vue'),
+            },
+            {
+              name: 'badges',
+              path: 'badges',
+              component: () => import('../views/components/badges/badges.vue'),
             },
           ],
         },

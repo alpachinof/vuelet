@@ -321,7 +321,7 @@
                   </RouterLink>
                   <RouterLink
                     @click="close"
-                    to="/components/notifications"
+                    to="/components/alerts"
                     class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                   >
                     هشدار ها
@@ -332,6 +332,13 @@
                     class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                   >
                     مودال ها
+                  </RouterLink>
+                  <RouterLink
+                    @click="close"
+                    to="/components/badges"
+                    class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                  >
+                    نشان ها
                   </RouterLink>
                 </DisclosurePanel>
               </Disclosure>
