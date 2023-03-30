@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['vazir', 'Helvetica', 'Arial', 'sans-serif'],
+      sans: ['farsinum'],
     },
     extend: {},
   },

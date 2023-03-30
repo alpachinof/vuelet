@@ -8,3 +8,10 @@
   font-weight: normal;
   src: url('./assets/fonts/Vazirmatn-Medium.woff2');
 }
+
+@font-face {
+  font-family: 'farsinum';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/Vazirmatn-FD-Medium.woff2');
+}

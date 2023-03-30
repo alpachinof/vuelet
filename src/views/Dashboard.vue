@@ -49,6 +49,40 @@
         </div>
       </div>
 
+      <div class="max-w-6xl mx-auto my-8 px-4 sm:px-6 lg:px-0">
+        <div
+          class="mx-8 mt-2 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-6"
+        >
+          <div class="bg-white col-span-4 shadow rounded-lg">
+            <h2 class="m-8 text-sm font-medium text-gray-500 truncate">
+              فروش ماهیانه
+            </h2>
+            <apexchart
+              type="bar"
+              :options="options"
+              :series="series"
+            ></apexchart>
+          </div>
+          <div class="col-span-2 bg-white shadow rounded-lg">
+            <h2 class="m-8 text-sm font-medium text-gray-500 truncate">
+              آمار فروش
+            </h2>
+            <apexchart
+              type="radialBar"
+              height="300"
+              :options="radialOptions"
+              :series="radialseries"
+            ></apexchart>
+            <button
+              type="button"
+              class="w-11/12 mr-4 inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            >
+              2003
+            </button>
+          </div>
+        </div>
+      </div>
+
       <h2
         class="max-w-6xl mx-auto mt-8 px-4 text-lg leading-6 font-medium text-gray-900 sm:px-6 lg:px-8"
       >
@@ -249,16 +283,7 @@
 </template>
 <script setup>
   import { ref } from 'vue';
-  import {
-    Dialog,
-    DialogOverlay,
-    Menu,
-    MenuButton,
-    MenuItem,
-    MenuItems,
-    TransitionChild,
-    TransitionRoot,
-  } from '@headlessui/vue';
+
   import {
     BellIcon,
     ClockIcon,
@@ -281,6 +306,48 @@
     OfficeBuildingIcon,
     SearchIcon,
   } from '@heroicons/vue/solid';
+
+  const options = {
+    chart: {
+      id: 'vuechart-example',
+      toolbar: {
+        show: false,
+      },
+    },
+    xaxis: {
+      categories: [1395, 1396, 1397, 1398, 1399, 1400, 1401, 1402],
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 5,
+      },
+    },
+    colors: ['#1d4ed8'],
+  };
+
+  const series = [
+    {
+      name: 'series-1',
+      data: [30, 40, 45, 50, 49, 60, 70, 91],
+    },
+  ];
+
+  const radialseries = [70];
+
+  const radialOptions = {
+    chart: {
+      height: 350,
+      type: 'radialBar',
+    },
+    plotOptions: {
+      radialBar: {
+        hollow: {
+          size: '70%',
+        },
+      },
+    },
+    labels: ['Cricket'],
+  };
 
   const navigation = [
     { name: 'خانه', href: '#', icon: HomeIcon, current: true },
