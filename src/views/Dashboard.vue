@@ -51,11 +51,11 @@
 
       <div class="max-w-6xl mx-auto my-8 px-4 sm:px-6 lg:px-0">
         <div
-          class="mx-8 mt-2 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-6"
+          class="mt-2 lg:mx-8 grid grid-cols-1 gap-5 md:grid-cols-5 lg:grid-cols-6"
         >
-          <div class="bg-white col-span-4 shadow rounded-lg">
+          <div class="bg-white md:col-span-3 lg:col-span-4 shadow rounded-lg">
             <h2 class="m-8 text-sm font-medium text-gray-500 truncate">
-              فروش ماهیانه
+              فروش سالانه
             </h2>
             <apexchart
               type="bar"
@@ -63,21 +63,50 @@
               :series="series"
             ></apexchart>
           </div>
-          <div class="col-span-2 bg-white shadow rounded-lg">
+          <div class="md:col-span-2 lg:col-span-2 bg-white shadow rounded-lg">
             <h2 class="m-8 text-sm font-medium text-gray-500 truncate">
-              آمار فروش
+              ذخیره سازی ابری
             </h2>
             <apexchart
               type="radialBar"
-              height="300"
               :options="radialOptions"
               :series="radialseries"
             ></apexchart>
+            <div class="-mt-px flex divide-x divide-x-reverse divide-gray-200">
+              <div class="w-0 flex-1 flex flex-col">
+                <a
+                  href="#"
+                  class="relative -mr-px flex-1 inline-flex items-center justify-center py-2 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
+                >
+                  <span class="px-2 ml-3 break-words text-center"
+                    >کل فضای ذخیره سازی
+                  </span>
+                </a>
+                <span
+                  class="relative -mr-px flex-1 inline-flex items-center justify-center py-1 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
+                  >8TB</span
+                >
+              </div>
+              <div class="-ml-px w-0 flex-1 flex flex-col">
+                <a
+                  href="#"
+                  class="relative flex-1 inline-flex items-center justify-center py-2 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"
+                >
+                  <span class="px-2 ml-3 break-words text-center"
+                    >فضای استفاده شده</span
+                  >
+                </a>
+                <span
+                  class="relative -mr-px flex-1 inline-flex items-center justify-center py-1 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
+                  >5TB</span
+                >
+              </div>
+            </div>
             <button
               type="button"
-              class="w-11/12 mr-4 inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              class="w-11/12 mr-4 my-8 inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
-              2003
+              ارتقاء فضای ذخیره سازی
             </button>
           </div>
         </div>
@@ -86,7 +115,7 @@
       <h2
         class="max-w-6xl mx-auto mt-8 px-4 text-lg leading-6 font-medium text-gray-900 sm:px-6 lg:px-8"
       >
-        فعالیت های اخیر
+        تراکنش ها
       </h2>
 
       <!-- Activity list (smallest breakpoint only) -->
@@ -244,19 +273,19 @@
               >
                 <div class="hidden sm:block">
                   <p class="text-sm text-gray-700">
-                    Showing
+                    نمایش
                     {{ ' ' }}
                     <span class="font-medium">1</span>
                     {{ ' ' }}
-                    to
+                    تا
                     {{ ' ' }}
                     <span class="font-medium">10</span>
                     {{ ' ' }}
-                    of
+                    از
                     {{ ' ' }}
                     <span class="font-medium">20</span>
                     {{ ' ' }}
-                    results
+                    نتیجه
                   </p>
                 </div>
                 <div class="flex-1 flex justify-between sm:justify-end">
@@ -319,7 +348,11 @@
     },
     plotOptions: {
       bar: {
+        columnWidth: '40%',
         borderRadius: 5,
+        dataLabels: {
+          position: 'top',
+        },
       },
     },
     colors: ['#1d4ed8'],
@@ -339,14 +372,45 @@
       height: 350,
       type: 'radialBar',
     },
+    stroke: {
+      lineCap: 'round',
+    },
     plotOptions: {
       radialBar: {
         hollow: {
           size: '70%',
         },
+        track: {
+          show: true,
+          startAngle: undefined,
+          endAngle: undefined,
+          background: '#e5e7eb',
+          strokeWidth: '97%',
+          opacity: 1,
+          margin: 5,
+          dropShadow: {
+            enabled: false,
+            top: 0,
+            left: 0,
+            blur: 3,
+            opacity: 0.5,
+          },
+        },
+
+        dataLabels: {
+          show: true,
+          name: {
+            show: true,
+            fontSize: '14px',
+            fontFamily: undefined,
+            fontWeight: 600,
+            color: '#374151',
+            offsetY: -10,
+          },
+        },
       },
     },
-    labels: ['Cricket'],
+    labels: ['فضای استفاده شده'],
   };
 
   const navigation = [
@@ -385,20 +449,20 @@
   const transactions = [
     {
       id: 1,
-      name: 'Payment to Molly Sanders',
+      name: '	قالب تیلویند پرو نسخه 2.3.6',
       href: '#',
-      amount: '$20,000',
-      currency: 'USD',
-      status: 'success',
+      amount: '150,000',
+      currency: 'تومان',
+      status: 'موفق',
       date: 'July 11, 2020',
       datetime: '2020-07-11',
     },
     // More transactions...
   ];
   const statusStyles = {
-    success: 'bg-green-100 text-green-800',
-    processing: 'bg-yellow-100 text-yellow-800',
-    failed: 'bg-gray-100 text-gray-800',
+    موفق: 'bg-green-100 text-green-800',
+    درانتظار: 'bg-yellow-200 text-yellow-800',
+    ناموفق: 'bg-gray-100 text-gray-800',
   };
 
   const sidebarOpen = ref(false);

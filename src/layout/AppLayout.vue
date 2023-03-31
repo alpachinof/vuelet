@@ -346,7 +346,7 @@
               </Disclosure>
             </div>
             <RouterLink
-              to="/calendar"
+              to="/charts"
               class="text-gray-500 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
             >
               <component
@@ -354,7 +354,7 @@
                 class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500"
                 aria-hidden="true"
               />
-              تقویم
+              نمودار ها
             </RouterLink>
             <div class="mx-auto w-full max-w-md rounded-2xl bg-white">
               <Disclosure v-slot="{ open, close }">

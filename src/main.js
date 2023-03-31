@@ -8,4 +8,5 @@ const app = createApp(App);
 
 app.use(router);
 app.use(VueApexCharts);
+window.Apex.chart = { fontFamily: 'farsinum' };
 app.mount('#app');

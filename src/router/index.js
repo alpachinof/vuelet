@@ -42,9 +42,9 @@ const router = createRouter({
           component: () => import('../views/forms/FormElements.vue'),
         },
         {
-          path: '/calendar',
-          name: 'calendar',
-          component: () => import('../views/calendar/month.vue'),
+          path: '/charts',
+          name: 'charts',
+          component: () => import('../views/charts/charts.vue'),
         },
         {
           path: '/components',
