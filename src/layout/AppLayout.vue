@@ -213,7 +213,7 @@
 
     <!-- Static sidebar for desktop -->
     <div
-      class="hidden lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0 lg:shadow"
+      class="hidden lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0 lg:shadow-lg"
     >
       <!-- Sidebar component, swap this element with another sidebar if you like -->
       <div class="flex flex-col flex-grow bg-white pt-5 pb-4 overflow-y-auto">
@@ -415,6 +415,7 @@
                 />
                 {{ item.name }}
               </a>
+              <Support />
             </div>
           </div>
         </nav>
@@ -544,6 +545,7 @@
 
 <script setup>
   import { ref } from 'vue';
+  import Support from '../components/Support.vue';
   import {
     Dialog,
     DialogOverlay,
