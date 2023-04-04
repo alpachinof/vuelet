@@ -15,6 +15,9 @@
   font-weight: normal;
   src: url('./assets/fonts/Vazirmatn-FD-Medium.woff2');
 }
+* {
+  @apply scrollbar-thin scrollbar-thumb-rounded-lg scrollbar-track-white scrollbar-thumb-gray-300;
+}
 
 @layer utilities {
   .scrollbar::-webkit-scrollbar {
