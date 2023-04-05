@@ -39,7 +39,7 @@
               <div class="text-sm">
                 <a
                   :href="card.href"
-                  class="font-medium text-cyan-700 hover:text-cyan-900"
+                  class="font-medium text-blue-700 hover:text-blue-900"
                 >
                   مشاهده همه
                 </a>
@@ -104,7 +104,7 @@
             </div>
             <button
               type="button"
-              class="w-11/12 mr-4 my-8 inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              class="w-11/12 mr-4 my-8 inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
               ارتقاء فضای ذخیره سازی
             </button>
@@ -396,7 +396,6 @@
             opacity: 0.5,
           },
         },
-
         dataLabels: {
           show: true,
           name: {

@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div class="w-full">
     <button
       @click="success2 = true"
       type="button"
-      class="mr-8 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+      class="w-11/12 mr-2 inline-flex items-center px-2 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-gray-500 hover:bg-gray-100"
     >
-      خوشت اومده؟
+      حمایت از ما
     </button>
-    <TransitionRoot v-for="(item, i) in kazem" as="template" :show="success2">
+    <TransitionRoot as="template" :show="success2">
       <Dialog
         as="div"
         class="fixed z-10 inset-0 overflow-y-auto"
@@ -61,7 +61,7 @@
                     as="h3"
                     class="text-lg leading-6 font-medium text-gray-900"
                   >
-                    {{ item.q }}
+                    حمایت
                   </DialogTitle>
                 </div>
               </div>
@@ -78,10 +78,10 @@
                 <button
                   type="button"
                   class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:col-start-1 sm:text-sm"
-                  @click="success2 = false"
+                  @click="githubstar"
                   ref="cancelButtonRef"
                 >
-                  {{ item.a }}
+                  ستاره بده
                 </button>
               </div>
             </div>
@@ -105,22 +105,7 @@
 
   const success2 = ref(false);
 
-  const kazem = [
-    {
-      q: 'خوشت اومده ازش؟',
-      a: 'نه',
-    },
-    {
-      q: 'خوشت اومده',
-      a: 'نه براچی؟',
-    },
-    {
-      q: 'خفه شو بابا خوشت اومده',
-      a: 'نه',
-    },
-    {
-      q: 'خفه شو بابا خفه شو',
-      a: 'تو خفه شو خوشت اومده خوشم نیومده',
-    },
-  ];
+  const githubstar = () => {
+    window.location.href = 'http://github.com/alpachinof/rtl-vue-admin';
+  };
 </script>

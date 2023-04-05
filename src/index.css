@@ -39,4 +39,8 @@
   .scrollbar::-webkit-scrollbar-thumb:hover {
     background: #c0a0b9;
   }
+
+  .active {
+    @apply bg-gradient-to-l from-blue-600 to-blue-300 text-white;
+  }
 }
