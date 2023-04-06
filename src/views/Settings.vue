@@ -59,7 +59,7 @@
             <div class="flex-shrink-0 px-4 flex items-center">
               <img
                 class="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/easywire-logo-purple-600-mark-gray-900-text.svg"
+                src="https://tailwindui.com/img/logos/easywire-logo-blue-600-mark-gray-900-text.svg"
                 alt="Easywire"
               />
             </div>
@@ -72,7 +72,7 @@
                     :href="item.href"
                     :class="[
                       item.current
-                        ? 'bg-purple-50 border-purple-600 text-purple-600'
+                        ? 'bg-blue-50 border-blue-600 text-blue-600'
                         : 'border-transparent text-gray-600 hover:bg-gray-50 hover:text-gray-900',
                       'group border-l-4 py-2 px-3 flex items-center text-base font-medium',
                     ]"
@@ -82,7 +82,7 @@
                       :is="item.icon"
                       :class="[
                         item.current
-                          ? 'text-purple-500'
+                          ? 'text-blue-500'
                           : 'text-gray-400 group-hover:text-gray-500',
                         'mr-4 flex-shrink-0 h-6 w-6',
                       ]"
@@ -137,7 +137,7 @@
                     <select
                       id="selected-tab"
                       name="selected-tab"
-                      class="mt-1 block w-full pr-3 pl-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm rounded-md"
+                      class="mt-1 block w-full pr-3 pl-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
                     >
                       <option
                         v-for="tab in tabs"
@@ -157,7 +157,7 @@
                           :href="tab.href"
                           :class="[
                             tab.current
-                              ? 'border-purple-500 text-purple-600'
+                              ? 'border-blue-500 text-blue-600'
                               : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
                             'whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm',
                           ]"
@@ -192,7 +192,7 @@
                             <span class="mr-4 flex-shrink-0">
                               <button
                                 type="button"
-                                class="rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                               >
                                 بروزرسانی
                               </button>
@@ -220,7 +220,7 @@
                             >
                               <button
                                 type="button"
-                                class="rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                               >
                                 یروزرسانی
                               </button>
@@ -229,7 +229,7 @@
                               >
                               <button
                                 type="button"
-                                class="rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                               >
                                 حذف
                               </button>
@@ -251,7 +251,7 @@
                             <span class="mr-4 flex-shrink-0">
                               <button
                                 type="button"
-                                class="rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                               >
                                 بروزرسانی
                               </button>
@@ -269,7 +269,7 @@
                             <span class="mr-4 flex-shrink-0">
                               <button
                                 type="button"
-                                class="rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                               >
                                 بروزرسانی
                               </button>
@@ -304,7 +304,7 @@
                             <span class="mr-4 flex-shrink-0">
                               <button
                                 type="button"
-                                class="rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                               >
                                 بروزرسانی
                               </button>
@@ -326,7 +326,7 @@
                             >
                               <button
                                 type="button"
-                                class="rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                               >
                                 بروزرسانی
                               </button>
@@ -335,7 +335,7 @@
                               >
                               <button
                                 type="button"
-                                class="rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                class="rounded-md font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                               >
                                 حذف
                               </button>
@@ -360,9 +360,9 @@
                               v-model="automaticTimezoneEnabled"
                               :class="[
                                 automaticTimezoneEnabled
-                                  ? 'bg-purple-600'
+                                  ? 'bg-blue-600'
                                   : 'bg-gray-200',
-                                'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 sm:ml-auto',
+                                'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-auto',
                               ]"
                             >
                               <span
@@ -395,9 +395,9 @@
                               v-model="autoUpdateApplicantDataEnabled"
                               :class="[
                                 autoUpdateApplicantDataEnabled
-                                  ? 'bg-purple-600'
+                                  ? 'bg-blue-600'
                                   : 'bg-gray-200',
-                                'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 sm:ml-auto',
+                                'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-auto',
                               ]"
                             >
                               <span

@@ -1,13 +1,4 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <!--
-      This example requires updating your template:
-  
-      ```
-      <html class="h-full">
-      <body class="h-full">
-      ```
-    -->
   <div class="h-screen pt-16 pb-12 flex flex-col bg-white">
     <main
       class="flex-grow flex flex-col justify-center max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8"
@@ -17,7 +8,7 @@
           <span class="sr-only">Workflow</span>
           <img
             class="h-12 w-auto"
-            src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
+            src="https://tailwindui.com/img/logos/workflow-mark.svg?color=blue&shade=600"
             alt=""
           />
         </a>
@@ -25,7 +16,7 @@
       <div class="py-16">
         <div class="text-center">
           <p
-            class="text-sm font-semibold text-indigo-600 uppercase tracking-wide"
+            class="text-sm font-semibold text-blue-600 uppercase tracking-wide"
           >
             ۴۰۴
           </p>
@@ -40,7 +31,7 @@
           <div class="mt-6">
             <a
               href="#"
-              class="text-base font-medium text-indigo-600 hover:text-indigo-500"
+              class="text-base font-medium text-blue-600 hover:text-blue-500"
               >بازگشت به خانه<span aria-hidden="true"> &rarr;</span></a
             >
           </div>

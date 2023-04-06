@@ -27,7 +27,7 @@
           leave-to="-translate-x-full"
         >
           <div
-            class="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-cyan-700"
+            class="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-blue-700"
           >
             <TransitionChild
               as="template"
@@ -52,18 +52,18 @@
             <div class="flex-shrink-0 flex items-center px-4">
               <img
                 class="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/easywire-logo-cyan-300-mark-white-text.svg"
+                src="https://tailwindui.com/img/logos/easywire-logo-blue-300-mark-white-text.svg"
                 alt="Easywire logo"
               />
             </div>
             <nav
-              class="mt-5 flex-shrink-0 h-full divide-y divide-cyan-800 overflow-y-auto"
+              class="mt-5 flex-shrink-0 h-full divide-y divide-blue-800 overflow-y-auto"
               aria-label="Sidebar"
             >
               <div class="px-2 space-y-1">
                 <RouterLink
                   to="/"
-                  class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-base font-medium rounded-md"
+                  class="text-blue-100 hover:text-white hover:bg-blue-600 group flex items-center px-2 py-2 text-base font-medium rounded-md"
                 >
                   <component
                     :is="ViewGridIcon"
@@ -75,7 +75,7 @@
                 <div class="mx-auto w-full max-w-md rounded-2xl">
                   <Disclosure v-slot="{ open, close }">
                     <DisclosureButton
-                      class="w-full justify-start rounded-lg text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium"
+                      class="w-full justify-start rounded-lg text-blue-100 hover:text-white hover:bg-blue-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium"
                     >
                       <component
                         :is="TableIcon"
@@ -94,14 +94,14 @@
                       <RouterLink
                         @click="close"
                         to="/tables/plain"
-                        class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                        class="text-blue-100 hover:text-white hover:bg-blue-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                       >
                         جدول ساده
                       </RouterLink>
                       <RouterLink
                         @click="close"
                         to="/tables/avatar"
-                        class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                        class="text-blue-100 hover:text-white hover:bg-blue-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                       >
                         جدول پیشرفته
                       </RouterLink>
@@ -110,7 +110,7 @@
                 </div>
                 <RouterLink
                   to="/forms"
-                  class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                  class="text-blue-100 hover:text-white hover:bg-blue-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                 >
                   <component
                     :is="PencilAltIcon"
@@ -121,7 +121,7 @@
                 </RouterLink>
                 <RouterLink
                   to="/forms"
-                  class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                  class="text-blue-100 hover:text-white hover:bg-blue-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                 >
                   <component
                     :is="TemplateIcon"
@@ -132,7 +132,7 @@
                 </RouterLink>
                 <RouterLink
                   to="/calendar"
-                  class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                  class="text-blue-100 hover:text-white hover:bg-blue-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                 >
                   <component
                     :is="CalendarIcon"
@@ -144,7 +144,7 @@
                 <div class="mx-auto w-full max-w-md rounded-2xl">
                   <Disclosure v-slot="{ open, close }">
                     <DisclosureButton
-                      class="w-full justify-start rounded-lg text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium"
+                      class="w-full justify-start rounded-lg text-blue-100 hover:text-white hover:bg-blue-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium"
                     >
                       <component
                         :is="DocumentDuplicateIcon"
@@ -163,21 +163,21 @@
                       <RouterLink
                         @click="close"
                         to="/404/simple"
-                        class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                        class="text-blue-100 hover:text-white hover:bg-blue-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                       >
                         404
                       </RouterLink>
                       <RouterLink
                         @click="close"
                         to="/auth/login"
-                        class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                        class="text-blue-100 hover:text-white hover:bg-blue-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                       >
                         ورود
                       </RouterLink>
                       <RouterLink
                         @click="close"
                         to="/auth/register"
-                        class="text-cyan-100 hover:text-white hover:bg-cyan-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                        class="text-blue-100 hover:text-white hover:bg-blue-600 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                       >
                         ثبت نام
                       </RouterLink>
@@ -191,11 +191,11 @@
                     v-for="item in secondaryNavigation"
                     :key="item.name"
                     :href="item.href"
-                    class="group flex items-center px-2 py-2 text-base font-medium rounded-md text-cyan-100 hover:text-white hover:bg-cyan-600"
+                    class="group flex items-center px-2 py-2 text-base font-medium rounded-md text-blue-100 hover:text-white hover:bg-blue-600"
                   >
                     <component
                       :is="item.icon"
-                      class="mr-4 h-6 w-6 text-cyan-200"
+                      class="mr-4 h-6 w-6 text-blue-200"
                       aria-hidden="true"
                     />
                     {{ item.name }}
@@ -220,15 +220,15 @@
         <div class="flex items-center flex-shrink-0 px-4">
           <img
             class="h-8 w-auto"
-            src="https://tailwindui.com/img/logos/easywire-logo-cyan-300-mark-white-text.svg"
+            src="https://tailwindui.com/img/logos/easywire-logo-blue-300-mark-white-text.svg"
             alt="Easywire logo"
           />
         </div>
         <nav
-          class="mt-5 flex-1 flex flex-col divide-y divide-cyan-800 overflow-y-auto"
+          class="mt-5 flex-1 flex flex-col divide-y divide-blue-800 overflow-y-auto"
           aria-label="Sidebar"
         >
-          <!-- active class bg-cyan-800 text-white -->
+          <!-- active class bg-blue-800 text-white -->
           <div class="px-2 space-y-1">
             <RouterLink
               to="/"
@@ -417,7 +417,7 @@
       >
         <button
           type="button"
-          class="px-4 border-r border-gray-200 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500 lg:hidden"
+          class="px-4 border-r border-gray-200 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 lg:hidden"
           @click="sidebarOpen = true"
         >
           <span class="sr-only">Open sidebar</span>
@@ -452,7 +452,7 @@
           <div class="mr-4 flex items-center md:mr-6">
             <button
               type="button"
-              class="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+              class="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
               <span class="sr-only">View notifications</span>
               <BellIcon class="h-6 w-6" aria-hidden="true" />
@@ -462,13 +462,9 @@
             <Menu as="div" class="mr-3 relative">
               <div>
                 <MenuButton
-                  class="max-w-xs bg-white rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 lg:p-2 lg:rounded-md lg:hover:bg-gray-50"
+                  class="max-w-xs bg-white rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 lg:p-2 lg:rounded-md lg:hover:bg-gray-50"
                 >
-                  <img
-                    class="h-8 w-8 rounded-full"
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
+                  <img class="h-8 w-8 rounded-full" src="/avatar.jpg" alt="" />
                   <span
                     class="hidden mr-3 text-gray-700 text-sm font-medium lg:block"
                     ><span class="sr-only">Open user menu for </span

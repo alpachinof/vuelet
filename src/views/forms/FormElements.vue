@@ -17,7 +17,7 @@
                     name="first-name"
                     id="first-name"
                     autocomplete="given-name"
-                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                    class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                   />
                 </div>
 
@@ -32,7 +32,7 @@
                     name="last-name"
                     id="last-name"
                     autocomplete="family-name"
-                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                    class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                   />
                 </div>
 
@@ -47,7 +47,7 @@
                     name="email-address"
                     id="email-address"
                     autocomplete="email"
-                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                    class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                   />
                 </div>
 
@@ -61,7 +61,7 @@
                     id="country"
                     name="country"
                     autocomplete="country-name"
-                    class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   >
                     <option>آمریکا</option>
                     <option>کانادا</option>
@@ -89,7 +89,7 @@
                     </span>
                     <button
                       type="button"
-                      class="mr-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      class="mr-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                     >
                       ویرایش
                     </button>
@@ -121,7 +121,7 @@
                       <div class="flex text-sm text-gray-600">
                         <label
                           for="file-upload"
-                          class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
+                          class="relative cursor-pointer bg-white rounded-md font-medium text-blue-600 hover:text-blue-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-blue-500"
                         >
                           <span>آپلود فایل</span>
                           <input
@@ -149,7 +149,7 @@
                             id="comments"
                             name="comments"
                             type="checkbox"
-                            class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                            class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded"
                           />
                         </div>
                         <div class="mr-3 text-sm">
@@ -170,7 +170,7 @@
                             id="candidates"
                             name="candidates"
                             type="checkbox"
-                            class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                            class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded"
                           />
                         </div>
                         <div class="mr-3 text-sm">
@@ -191,7 +191,7 @@
                             id="offers"
                             name="offers"
                             type="checkbox"
-                            class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                            class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded"
                           />
                         </div>
                         <div class="mr-3 text-sm">
@@ -218,7 +218,7 @@
                           id="push-everything"
                           name="push-notifications"
                           type="radio"
-                          class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+                          class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300"
                         />
                         <label
                           for="push-everything"
@@ -232,7 +232,7 @@
                           id="push-email"
                           name="push-notifications"
                           type="radio"
-                          class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+                          class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300"
                         />
                         <label
                           for="push-email"
@@ -246,7 +246,7 @@
                           id="push-nothing"
                           name="push-notifications"
                           type="radio"
-                          class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+                          class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300"
                         />
                         <label
                           for="push-nothing"
@@ -260,8 +260,8 @@
                   <Switch
                     v-model="enabled"
                     :class="[
-                      enabled ? 'bg-indigo-600' : 'bg-gray-200',
-                      'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
+                      enabled ? 'bg-blue-600' : 'bg-gray-200',
+                      'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500',
                     ]"
                   >
                     <span class="sr-only">Use setting</span>
@@ -277,8 +277,8 @@
                   <Switch
                     v-model="enabled"
                     :class="[
-                      enabled ? 'bg-indigo-600' : 'bg-gray-200',
-                      'mr-2 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
+                      enabled ? 'bg-blue-600' : 'bg-gray-200',
+                      'mr-2 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500',
                     ]"
                   >
                     <span class="sr-only">Use setting</span>
@@ -321,7 +321,7 @@
                         aria-hidden="true"
                       >
                         <svg
-                          class="h-3 w-3 text-indigo-600"
+                          class="h-3 w-3 text-blue-600"
                           fill="currentColor"
                           viewBox="0 0 12 12"
                         >
@@ -338,7 +338,7 @@
             <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
               <button
                 type="submit"
-                class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
                 ذخیره
               </button>

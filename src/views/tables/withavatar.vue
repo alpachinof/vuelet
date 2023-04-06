@@ -8,7 +8,7 @@
       <div class="mt-4 sm:mt-0 sm:mr-16 sm:flex-none">
         <button
           type="button"
-          class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+          class="inline-flex items-center justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto"
         >
           کاربر جدید
         </button>
@@ -85,9 +85,9 @@
                     {{ person.role }}
                   </td>
                   <td
-                    class="relative whitespace-nowrap py-4 pr-3 pl-4 text-left text-sm font-medium sm:pl-6"
+                    class="relative whitespace-nowrap py-4 pr-3 pl-4 text-right text-sm font-medium sm:pl-6"
                   >
-                    <a href="#" class="text-indigo-600 hover:text-indigo-900"
+                    <a href="#" class="text-blue-600 hover:text-blue-900"
                       >ویرایش<span class="sr-only">, {{ person.name }}</span></a
                     >
                   </td>
@@ -101,7 +101,7 @@
   </div>
 </template>
 
-<script>
+<script setup>
   const people = [
     {
       name: 'لیندزی والتون',
@@ -109,17 +109,8 @@
       department: 'بهینه سازی',
       email: 'lindsay.walton@example.com',
       role: 'کاربر',
-      image:
-        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      image: '/avatar.jpg',
     },
     // More people...
   ];
-
-  export default {
-    setup() {
-      return {
-        people,
-      };
-    },
-  };
 </script>
