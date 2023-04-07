@@ -15,13 +15,23 @@
     chart: {
       type: 'pie',
     },
-    labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+    labels: ['مک', 'ویندوز', 'لینوکس', 'اندروید', 'آیفون'],
     title: {
       text: 'نمودار دایره ای',
       align: 'center',
       style: {
         fontSize: '16px',
         color: '#666',
+      },
+    },
+    legend: {
+      position: 'right',
+      horizontalAlign: 'left',
+      markers: { offsetX: 4, offsetY: 3 },
+      labels: { colors: '#b45309' },
+      itemMargin: {
+        vertical: 10,
+        horizontal: 10,
       },
     },
   };

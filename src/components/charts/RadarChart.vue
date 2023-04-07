@@ -12,15 +12,15 @@
 <script setup>
   const series = [
     {
-      name: 'Series 1',
+      name: 'نمونه اول',
       data: [80, 50, 30, 40, 100, 20],
     },
     {
-      name: 'Series 2',
+      name: 'نمونه دوم',
       data: [20, 30, 40, 80, 20, 80],
     },
     {
-      name: 'Series 3',
+      name: 'نمونه سوم',
       data: [44, 76, 78, 13, 43, 10],
     },
   ];
@@ -34,9 +34,17 @@
         left: 1,
         top: 1,
       },
+      toolbar: { show: false },
     },
-    title: {
-      text: 'Radar Chart - Multi Series',
+    legend: {
+      position: 'bottom',
+      horizontalAlign: 'left',
+      markers: { offsetX: 4, offsetY: 3 },
+      labels: { colors: '#b45309' },
+      itemMargin: {
+        vertical: 10,
+        horizontal: 10,
+      },
     },
     stroke: {
       width: 2,

@@ -10,9 +10,15 @@
 </template>
 
 <script setup>
+  const scatterColors = {
+    series1: '#ff9f43',
+    series2: '#7367f0',
+    series3: '#28c76f',
+  };
+
   const series = [
     {
-      name: 'SAMPLE A',
+      name: 'نمونه اول',
       data: [
         [16.4, 5.4],
         [21.7, 2],
@@ -48,7 +54,7 @@
       ],
     },
     {
-      name: 'SAMPLE B',
+      name: 'نمونه دوم',
       data: [
         [36.4, 13.4],
         [1.7, 11],
@@ -84,7 +90,7 @@
       ],
     },
     {
-      name: 'SAMPLE C',
+      name: 'نمونه سوم',
       data: [
         [21.7, 3],
         [23.6, 3.5],
@@ -122,23 +128,51 @@
   ];
   const chartOptions = {
     chart: {
-      height: 350,
       type: 'scatter',
+      parentHeightOffset: 0,
+      toolbar: { show: false },
       zoom: {
-        enabled: true,
         type: 'xy',
+        enabled: true,
+      },
+    },
+    legend: {
+      position: 'top',
+      horizontalAlign: 'left',
+      markers: { offsetX: 4, offsetY: 3 },
+      labels: { colors: '#b45309' },
+      itemMargin: {
+        vertical: 10,
+        horizontal: 10,
+      },
+    },
+    colors: [
+      scatterColors.series1,
+      scatterColors.series2,
+      scatterColors.series3,
+    ],
+    grid: {
+      borderColor: '#cbd5e1',
+      xaxis: {
+        lines: { show: true },
+      },
+    },
+    yaxis: {
+      labels: {
+        style: { colors: '#cbd5e1' },
       },
     },
     xaxis: {
       tickAmount: 10,
-      labels: {
-        formatter: function (val) {
-          return parseFloat(val).toFixed(1);
-        },
+      axisBorder: { show: false },
+      axisTicks: { color: '#9333ea' },
+      crosshairs: {
+        stroke: { color: '#be123c' },
       },
-    },
-    yaxis: {
-      tickAmount: 7,
+      labels: {
+        style: { colors: '#64748b' },
+        formatter: (val) => parseFloat(val).toFixed(1),
+      },
     },
     title: {
       text: 'نمودار پراکندگی',
