@@ -148,7 +148,7 @@
                     }}</time>
                   </span>
                 </span>
-                <ChevronRightIcon
+                <ChevronLeftIcon
                   class="flex-shrink-0 h-5 w-5 text-gray-400"
                   aria-hidden="true"
                 />
@@ -315,6 +315,7 @@
 
   import {
     BellIcon,
+    ChevronLeftIcon,
     ClockIcon,
     CogIcon,
     CreditCardIcon,
@@ -463,6 +464,4 @@
     درانتظار: 'bg-yellow-200 text-yellow-800',
     ناموفق: 'bg-gray-100 text-gray-800',
   };
-
-  const sidebarOpen = ref(false);
 </script>
