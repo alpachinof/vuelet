@@ -1,12 +1,4 @@
 <template>
-  <!--
-        This example requires updating your template:
-    
-        ```
-        <html class="h-full bg-white">
-        <body class="h-full">
-        ```
-      -->
   <div class="h-screen flex">
     <div class="hidden lg:block relative w-0 flex-1">
       <img
@@ -20,11 +12,7 @@
     >
       <div class="mx-auto w-full max-w-sm lg:w-96">
         <div>
-          <img
-            class="h-12 w-auto"
-            src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
-            alt="Workflow"
-          />
+          <img class="h-12 w-auto" src="/favicon.ico" alt="Workflow" />
           <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
             ایجاد حساب کاربری
           </h2>
