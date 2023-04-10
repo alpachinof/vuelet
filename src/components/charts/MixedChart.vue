@@ -10,6 +10,8 @@
 </template>
 
 <script setup>
+  import fa from 'apexcharts/dist/locales/fa.json';
+
   const series = [
     {
       name: 'وبلاگ',
@@ -26,6 +28,8 @@
     chart: {
       type: 'line',
       toolbar: { show: false },
+      locales: [fa],
+      defaultLocale: 'fa',
     },
     stroke: {
       width: [0, 4],

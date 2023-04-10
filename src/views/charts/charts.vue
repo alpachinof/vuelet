@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="mx-8 grid grid-cols-1 md:grid-cols-2 gap-4">
     <LinearChart />
     <ColumnChart />
     <PieChart />

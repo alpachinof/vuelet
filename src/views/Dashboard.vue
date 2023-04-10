@@ -7,42 +7,110 @@
         <h2 class="text-lg leading-6 font-medium text-gray-900">پیشخوان</h2>
         <div class="mt-2 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           <!-- Card -->
-          <div
-            v-for="card in cards"
-            :key="card.name"
-            class="bg-white overflow-hidden shadow rounded-lg"
-          >
+          <div class="bg-white overflow-hidden shadow rounded-lg">
             <div class="p-5">
               <div class="flex items-center">
-                <div class="flex-shrink-0">
-                  <component
-                    :is="card.icon"
-                    class="h-6 w-6 text-gray-400"
-                    aria-hidden="true"
-                  />
-                </div>
-                <div class="mr-5 w-0 flex-1">
-                  <dl>
+                <div class="w-0 flex-1">
+                  <dl class="space-y-2">
                     <dt class="text-sm font-medium text-gray-500 truncate">
-                      {{ card.name }}
+                      درآمد کل
                     </dt>
                     <dd>
-                      <div class="text-lg font-medium text-gray-900">
-                        {{ card.amount }}
+                      <div class="text-xl font-medium text-gray-900">
+                        30,659.450
+                      </div>
+                    </dd>
+                    <dd>
+                      <div class="text-xs font-medium text-gray-500">
+                        <span
+                          class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium text-green-500"
+                        >
+                          %2.1+
+                        </span>
+                        از هفته گذشته تاکنون
                       </div>
                     </dd>
                   </dl>
                 </div>
+                <div
+                  class="self-start h-12 w-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  <ScaleIcon class="h-6 w-6 text-white" aria-hidden="true" />
+                </div>
               </div>
             </div>
-            <div class="bg-gray-50 px-5 py-3">
-              <div class="text-sm">
-                <a
-                  :href="card.href"
-                  class="font-medium text-blue-700 hover:text-blue-900"
+          </div>
+
+          <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="p-5">
+              <div class="flex items-center">
+                <div class="w-0 flex-1">
+                  <dl class="space-y-2">
+                    <dt class="text-sm font-medium text-gray-500 truncate">
+                      درآمد امروز
+                    </dt>
+                    <dd>
+                      <div class="text-xl font-medium text-gray-900">
+                        500,000
+                      </div>
+                    </dd>
+                    <dd>
+                      <div class="text-xs font-medium text-gray-500">
+                        <span
+                          class="inline-flex items-center px-2 py-0.5 rounded font-medium text-red-500"
+                        >
+                          &1.2 -
+                        </span>
+                        از دیروز تاکنون
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+                <div
+                  class="self-start h-12 w-12 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0"
                 >
-                  مشاهده همه
-                </a>
+                  <CreditCardIcon
+                    class="h-6 w-6 text-white"
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="p-5">
+              <div class="flex items-center">
+                <div class="w-0 flex-1">
+                  <dl class="space-y-2">
+                    <dt class="text-sm font-medium text-gray-500 truncate">
+                      فروش روزانه
+                    </dt>
+                    <dd>
+                      <div class="text-xl font-medium text-gray-900">
+                        264,000
+                      </div>
+                    </dd>
+                    <dd>
+                      <div class="text-xs font-medium text-gray-500">
+                        <span
+                          class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium text-green-500"
+                        >
+                          %2.1+
+                        </span>
+                        از دیروز تاکنون
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+                <div
+                  class="self-start h-12 w-12 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  <TrendingUpIcon
+                    class="h-6 w-6 text-white"
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -311,31 +379,13 @@
   </main>
 </template>
 <script setup>
-  import { ref } from 'vue';
-
   import {
-    BellIcon,
     ChevronLeftIcon,
-    ClockIcon,
-    CogIcon,
     CreditCardIcon,
-    DocumentReportIcon,
-    HomeIcon,
-    MenuAlt1Icon,
-    QuestionMarkCircleIcon,
+    TrendingUpIcon,
     ScaleIcon,
-    ShieldCheckIcon,
-    UserGroupIcon,
-    XIcon,
   } from '@heroicons/vue/outline';
-  import {
-    CashIcon,
-    CheckCircleIcon,
-    ChevronDownIcon,
-    ChevronRightIcon,
-    OfficeBuildingIcon,
-    SearchIcon,
-  } from '@heroicons/vue/solid';
+  import { CashIcon } from '@heroicons/vue/solid';
 
   const options = {
     chart: {
@@ -413,39 +463,6 @@
     labels: ['فضای استفاده شده'],
   };
 
-  const navigation = [
-    { name: 'خانه', href: '#', icon: HomeIcon, current: true },
-    { name: 'جدول ها', href: '#', icon: ClockIcon, current: false },
-    { name: 'فرم ها', href: '#', icon: ScaleIcon, current: false },
-    { name: 'کامپوننت ها', href: '#', icon: CreditCardIcon, current: false },
-    { name: ' تقویم', href: '#', icon: UserGroupIcon, current: false },
-    { name: 'صفحه ها', href: '#', icon: DocumentReportIcon, current: false },
-  ];
-  const secondaryNavigation = [
-    { name: 'تنظیمات', href: '/settings', icon: CogIcon },
-    { name: 'راهنما', href: '#', icon: QuestionMarkCircleIcon },
-    { name: 'حریم خصوصی', href: '#', icon: ShieldCheckIcon },
-  ];
-  const cards = [
-    {
-      name: 'درامد کل',
-      href: '#',
-      icon: ScaleIcon,
-      amount: '۳۰,۶۵۹.۴۵۰',
-    },
-    {
-      name: 'درامد امروز',
-      href: '#',
-      icon: ScaleIcon,
-      amount: '۵۰۰,۰۰۰',
-    },
-    {
-      name: 'فروش روزانه',
-      href: '#',
-      icon: ScaleIcon,
-      amount: '۲۶۴,۰۰۰',
-    },
-  ];
   const transactions = [
     {
       id: 1,
@@ -457,7 +474,6 @@
       date: 'July 11, 2020',
       datetime: '2020-07-11',
     },
-    // More transactions...
   ];
   const statusStyles = {
     موفق: 'bg-green-100 text-green-800',

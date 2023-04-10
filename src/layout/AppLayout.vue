@@ -63,7 +63,7 @@
                 >
                   <component
                     :is="ViewGridIcon"
-                    class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500"
+                    class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500 group-[.active]:text-white"
                     aria-hidden="true"
                   />
                   داشبورد
@@ -104,11 +104,11 @@
                 </div>
                 <RouterLink
                   to="/forms"
-                  class="text-gray-500 hover:bg-gray-100 flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
+                  class="text-gray-500 hover:bg-gray-100 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                 >
                   <component
                     :is="PencilAltIcon"
-                    class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500"
+                    class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500 group-[.active]:text-white"
                     aria-hidden="true"
                   />
                   فرم ها
@@ -171,7 +171,7 @@
                   class="text-gray-500 hover:bg-gray-100 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
                 >
                   <component
-                    :is="CalendarIcon"
+                    :is="ChartPieIcon"
                     class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500 group-[.active]:text-white"
                     aria-hidden="true"
                   />
@@ -372,7 +372,7 @@
               class="text-gray-500 hover:bg-gray-100 group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md"
             >
               <component
-                :is="CalendarIcon"
+                :is="ChartPieIcon"
                 class="ml-4 flex-shrink-0 h-6 w-6 text-gray-500 group-[.active]:text-white"
                 aria-hidden="true"
               />
@@ -495,8 +495,8 @@
                   <img class="h-8 w-8 rounded-full" src="/avatar.jpg" alt="" />
                   <span
                     class="hidden mr-3 text-gray-700 text-sm font-medium lg:block"
-                    ><span class="sr-only">Open user menu for </span
-                    >ممدوفسکی</span
+                    ><span class="sr-only">Open user menu for </span>محمد
+                    بختیاری</span
                   >
                   <ChevronDownIcon
                     class="hidden flex-shrink-0 mr-1 h-5 w-5 text-gray-400 lg:block"
@@ -577,28 +577,18 @@
     TableIcon,
     PencilAltIcon,
     CogIcon,
-    CreditCardIcon,
-    DocumentReportIcon,
     TemplateIcon,
-    CalendarIcon,
+    ChartPieIcon,
     DocumentDuplicateIcon,
-    HomeIcon,
     ViewGridIcon,
     MenuAlt1Icon,
     QuestionMarkCircleIcon,
-    ScaleIcon,
     ShieldCheckIcon,
-    UserGroupIcon,
     XIcon,
   } from '@heroicons/vue/outline';
   import {
-    CashIcon,
-    CheckCircleIcon,
     ChevronDownIcon,
-    ChevronUpIcon,
     ChevronLeftIcon,
-    ChevronRightIcon,
-    OfficeBuildingIcon,
     SearchIcon,
   } from '@heroicons/vue/solid';
 
@@ -606,26 +596,6 @@
     { name: 'تنظیمات', to: '/settings', icon: CogIcon },
     { name: 'راهنما', to: 're', icon: QuestionMarkCircleIcon },
     { name: 'حریم خصوصی', to: 'er', icon: ShieldCheckIcon },
-  ];
-  const cards = [
-    {
-      name: 'درامد کل',
-      href: '#',
-      icon: ScaleIcon,
-      amount: '۳۰,۶۵۹.۴۵۰',
-    },
-    {
-      name: 'درامد امروز',
-      href: '#',
-      icon: ScaleIcon,
-      amount: '۵۰۰,۰۰۰',
-    },
-    {
-      name: 'فروش روزانه',
-      href: '#',
-      icon: ScaleIcon,
-      amount: '۲۶۴,۰۰۰',
-    },
   ];
 
   const sidebarOpen = ref(false);

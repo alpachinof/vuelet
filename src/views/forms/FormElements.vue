@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-10 lg:mr-8 px-8 pt-8 sm:mt-0">
+  <div class="mt-10 lg:mr-8 px-4 lg:px-8 pt-8 sm:mt-0">
     <div class="">
       <div class="mt-5 md:mt-0">
         <form action="#" method="POST">

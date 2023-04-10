@@ -5,6 +5,7 @@
 </template>
 
 <script setup>
+  import fa from 'apexcharts/dist/locales/fa.json';
   const series = [
     {
       name: 'Sales',
@@ -18,6 +19,8 @@
       toolbar: {
         show: false,
       },
+      locales: [fa],
+      defaultLocale: 'fa',
     },
 
     forecastDataPoints: {

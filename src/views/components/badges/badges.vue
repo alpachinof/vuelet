@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div class="mx-8 space-y-8">
-    <div class="space-x-2 space-x-reverse">
+    <div class="space-x-2 space-y-4 space-x-reverse">
       <span
         class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-gray-200 text-gray-800"
       >
@@ -87,7 +87,7 @@
       </span>
     </div>
 
-    <div class="space-x-2 space-x-reverse">
+    <div class="space-x-2 space-y-4 space-x-reverse">
       <span
         class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-200 text-gray-800"
       >
