@@ -33,9 +33,12 @@
                   </dl>
                 </div>
                 <div
-                  class="self-start h-12 w-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0"
+                  class="self-start h-12 w-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0"
                 >
-                  <ScaleIcon class="h-6 w-6 text-white" aria-hidden="true" />
+                  <ScaleIcon
+                    class="h-6 w-6 text-green-400"
+                    aria-hidden="true"
+                  />
                 </div>
               </div>
             </div>
@@ -67,10 +70,10 @@
                   </dl>
                 </div>
                 <div
-                  class="self-start h-12 w-12 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0"
+                  class="self-start h-12 w-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0"
                 >
                   <CreditCardIcon
-                    class="h-6 w-6 text-white"
+                    class="h-6 w-6 text-amber-400"
                     aria-hidden="true"
                   />
                 </div>
@@ -104,10 +107,10 @@
                   </dl>
                 </div>
                 <div
-                  class="self-start h-12 w-12 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0"
+                  class="self-start h-12 w-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0"
                 >
                   <TrendingUpIcon
-                    class="h-6 w-6 text-white"
+                    class="h-6 w-6 text-red-400"
                     aria-hidden="true"
                   />
                 </div>

@@ -4,7 +4,7 @@
     <button
       @click="success2 = true"
       type="button"
-      class="mr-8 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+      class="mr-8 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
     >
       موفق با تایید
     </button>
@@ -12,7 +12,7 @@
     <button
       @click="success = true"
       type="button"
-      class="mr-8 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+      class="mr-8 inline-flex items-center px-4 py-2 border-transparent text-sm font-medium rounded-md shadow-sm border-2 border-green-500 text-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
     >
       موفق
     </button>
@@ -20,7 +20,7 @@
     <button
       @click="error = true"
       type="button"
-      class="mr-8 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+      class="mr-8 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-red-500 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
     >
       اخطار
     </button>

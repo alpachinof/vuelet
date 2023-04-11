@@ -49,12 +49,9 @@
             >
               <div>
                 <div
-                  class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100"
+                  class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-red-100"
                 >
-                  <CheckIcon
-                    class="h-6 w-6 text-green-600"
-                    aria-hidden="true"
-                  />
+                  <HeartIcon class="h-6 w-6 text-red-600" aria-hidden="true" />
                 </div>
                 <div class="mt-3 text-center sm:mt-5">
                   <DialogTitle
@@ -63,6 +60,13 @@
                   >
                     حمایت
                   </DialogTitle>
+                  <div class="mt-2">
+                    <p class="text-sm text-gray-500">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                      و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </p>
+                  </div>
                 </div>
               </div>
               <div
@@ -70,17 +74,21 @@
               >
                 <button
                   type="button"
-                  class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:col-start-2 sm:text-sm"
-                  @click="success2 = false"
+                  class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-orange-900 text-base font-medium text-white hover:bg-orange-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-700 sm:col-start-2 sm:text-sm"
+                  @click="donation"
                 >
-                  حمایت مالی
+                  یه قهوه مهمونم کن
                 </button>
                 <button
                   type="button"
-                  class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:col-start-1 sm:text-sm"
+                  class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 sm:mt-0 sm:col-start-1 sm:text-sm"
                   @click="githubstar"
                   ref="cancelButtonRef"
                 >
+                  <StarIcon
+                    class="ml-1 h-4 w-4 self-center text-amber-600"
+                    aria-hidden="true"
+                  />
                   ستاره بده
                 </button>
               </div>
@@ -101,11 +109,19 @@
     TransitionChild,
     TransitionRoot,
   } from '@headlessui/vue';
-  import { CheckIcon } from '@heroicons/vue/outline';
+  import {
+    HeartIcon,
+    StarIcon,
+    CurrencyDollarIcon,
+  } from '@heroicons/vue/outline';
 
   const success2 = ref(false);
 
   const githubstar = () => {
     window.location.href = 'http://github.com/alpachinof/rtl-vue-admin';
+  };
+
+  const donation = () => {
+    window.location.href = 'https://www.coffeebede.com/codify';
   };
 </script>

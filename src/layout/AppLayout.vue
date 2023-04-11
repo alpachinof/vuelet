@@ -495,8 +495,8 @@
                   <img class="h-8 w-8 rounded-full" src="/avatar.jpg" alt="" />
                   <span
                     class="hidden mr-3 text-gray-700 text-sm font-medium lg:block"
-                    ><span class="sr-only">Open user menu for </span>محمد
-                    بختیاری</span
+                    ><span class="sr-only">Open user menu for </span>لیندزی
+                    والتون</span
                   >
                   <ChevronDownIcon
                     class="hidden flex-shrink-0 mr-1 h-5 w-5 text-gray-400 lg:block"
