@@ -1,12 +1,10 @@
 <template>
   <main class="flex-1 pb-8">
-    <!-- Page header -->
-
     <div class="mt-8">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-lg leading-6 font-medium text-gray-900">پیشخوان</h2>
         <div class="mt-2 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          <!-- Card -->
+          <!-- Cards -->
           <div class="bg-white overflow-hidden shadow rounded-lg">
             <div class="p-5">
               <div class="flex items-center">
@@ -120,7 +118,7 @@
         </div>
       </div>
 
-      <div class="max-w-6xl mx-auto my-8 px-4 sm:px-6 lg:px-0">
+      <div class="mx-auto my-8 px-4 sm:px-6 lg:px-0">
         <div
           class="mt-2 lg:mx-8 grid grid-cols-1 gap-5 md:grid-cols-5 lg:grid-cols-6"
         >
@@ -134,7 +132,9 @@
               :series="series"
             ></apexchart>
           </div>
-          <div class="md:col-span-2 lg:col-span-2 bg-white shadow rounded-lg">
+          <div
+            class="grid content-around md:col-span-2 lg:col-span-2 bg-white shadow rounded-lg"
+          >
             <h2 class="m-8 text-sm font-medium text-gray-500 truncate">
               ذخیره سازی ابری
             </h2>
@@ -251,7 +251,7 @@
 
       <!-- Activity table (small breakpoint and up) -->
       <div class="hidden sm:block">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex flex-col mt-2">
             <div
               class="align-middle min-w-full overflow-x-auto shadow overflow-hidden sm:rounded-lg"
@@ -426,6 +426,7 @@
       height: 350,
       type: 'radialBar',
     },
+    colors: ['#3b82f6'],
     stroke: {
       lineCap: 'round',
     },
@@ -472,6 +473,36 @@
       name: '	قالب تیلویند پرو نسخه 2.3.6',
       href: '#',
       amount: '150,000',
+      currency: 'تومان',
+      status: 'موفق',
+      date: 'July 11, 2020',
+      datetime: '2020-07-11',
+    },
+    {
+      id: 2,
+      name: 'اسکریپت صرافی',
+      href: '#',
+      amount: '2,000,000',
+      currency: 'تومان',
+      status: 'درانتظار',
+      date: 'July 11, 2020',
+      datetime: '2020-07-11',
+    },
+    {
+      id: 3,
+      name: 'قالب فزوشگاهی استادیار',
+      href: '#',
+      amount: '250,000',
+      currency: 'تومان',
+      status: 'ناموفق',
+      date: 'July 11, 2020',
+      datetime: '2020-07-11',
+    },
+    {
+      id: 4,
+      name: 'افزونه المنتور پرو',
+      href: '#',
+      amount: '200,000',
       currency: 'تومان',
       status: 'موفق',
       date: 'July 11, 2020',

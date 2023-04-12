@@ -224,7 +224,7 @@
                           for="push-everything"
                           class="mr-3 block text-sm font-medium text-gray-700"
                         >
-                          موز
+                          vue
                         </label>
                       </div>
                       <div class="flex items-center">
@@ -238,7 +238,7 @@
                           for="push-email"
                           class="mr-3 block text-sm font-medium text-gray-700"
                         >
-                          خیار
+                          react
                         </label>
                       </div>
                       <div class="flex items-center">
@@ -252,7 +252,7 @@
                           for="push-nothing"
                           class="mr-3 block text-sm font-medium text-gray-700"
                         >
-                          گوجه
+                          angular
                         </label>
                       </div>
                     </div>

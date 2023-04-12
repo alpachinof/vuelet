@@ -5,7 +5,7 @@
     >
       <div class="flex-shrink-0 flex justify-center">
         <a href="/" class="inline-flex">
-          <span class="sr-only">Workflow</span>
+          <span class="sr-only">vuelet</span>
           <img class="h-12 w-auto" src="/favicon.ico" alt="" />
         </a>
       </div>

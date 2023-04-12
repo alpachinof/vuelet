@@ -111,6 +111,5 @@
       role: 'کاربر',
       image: '/avatar.jpg',
     },
-    // More people...
   ];
 </script>

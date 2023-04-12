@@ -93,6 +93,5 @@
       email: 'lindsay.walton@example.com',
       role: 'کاربر',
     },
-    // More people...
   ];
 </script>

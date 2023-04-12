@@ -1,4 +1,3 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div class="mx-8 space-y-8">
     <div class="rounded-md bg-green-100 p-4">

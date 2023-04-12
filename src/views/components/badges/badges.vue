@@ -1,4 +1,3 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div class="mx-8 space-y-8">
     <div class="space-x-2 space-y-4 space-x-reverse">
