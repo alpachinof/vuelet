@@ -1,28 +1,28 @@
-# vue-project
+# معرفی
 
-This template should help get you started developing with Vue 3 in Vite.
+قالب مدیریتی ویولت برپایه ویوجی اس و تیلویند پیاده سازی شده و در دسترس قرار گرفته.
 
-## Recommended IDE Setup
+## نصب و راه اندازی
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+کپی سورس کد
 
-## Customize configuration
+```sh
+git clone git@github.com:alpachinof/vuelet.git
+```
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+### نصب وابستگی ها
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### اجرا در محیط لوکال
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### بیلد و خروجی گرفتن
 
 ```sh
 npm run build
