@@ -181,7 +181,7 @@
                           <dd
                             class="mt-1 flex text-sm text-gray-900 sm:mt-0 sm:col-span-2"
                           >
-                            <span class="flex-grow">ممد ممدوقسکی</span>
+                            <span class="flex-grow">لیندزی والتون</span>
                             <span class="mr-4 flex-shrink-0">
                               <button
                                 type="button"
@@ -204,8 +204,8 @@
                             <span class="flex-grow">
                               <img
                                 class="h-8 w-8 rounded-full"
-                                src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                alt=""
+                                src="/avatar.jpg"
+                                alt="avatar"
                               />
                             </span>
                             <span
@@ -239,7 +239,7 @@
                             class="mt-1 flex text-sm text-gray-900 sm:mt-0 sm:col-span-2"
                           >
                             <span class="flex-grow"
-                              >chelsea.hagon@example.com</span
+                              >lindsy.walton@example.com</span
                             >
                             <span class="mr-4 flex-shrink-0">
                               <button

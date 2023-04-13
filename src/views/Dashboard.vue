@@ -190,7 +190,7 @@
       </h2>
 
       <!-- Activity list (smallest breakpoint only) -->
-      <div class="shadow sm:hidden">
+      <div class="shadow sm:hidden mx-4">
         <ul
           role="list"
           class="mt-2 divide-y divide-gray-200 overflow-hidden shadow sm:hidden"
@@ -237,13 +237,13 @@
               href="#"
               class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:text-gray-500"
             >
-              Previous
+              قبلی
             </a>
             <a
               href="#"
               class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:text-gray-500"
             >
-              Next
+              بعدی
             </a>
           </div>
         </nav>

@@ -1,6 +1,7 @@
 <template>
   <div class="mr-8">
-    <div class="space-x-4 space-x-reverse">
+    <!-- primary buttons -->
+    <div class="space-x-4 space-x-reverse space-y-4">
       <button
         type="button"
         class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
@@ -33,7 +34,8 @@
       </button>
     </div>
 
-    <div class="space-x-4 space-x-reverse my-8">
+    <!-- secondary buttons -->
+    <div class="space-x-4 space-x-reverse space-y-4 my-8">
       <button
         type="button"
         class="inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
@@ -66,7 +68,8 @@
       </button>
     </div>
 
-    <div class="space-x-4 space-x-reverse my-8">
+    <!-- tertiary buttons -->
+    <div class="space-x-4 space-x-reverse space-y-4 my-8">
       <button
         type="button"
         class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
@@ -99,7 +102,8 @@
       </button>
     </div>
 
-    <div class="space-x-4 space-x-reverse my-8">
+    <!-- with icons -->
+    <div class="space-x-4 space-x-reverse space-y-4 my-8">
       <button
         type="button"
         class="inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
@@ -130,7 +134,8 @@
       </button>
     </div>
 
-    <div class="space-x-4 space-x-reverse my-8">
+    <!-- rounded buttons -->
+    <div class="space-x-4 space-x-reverse space-y-4 my-8">
       <button
         type="button"
         class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
@@ -163,6 +168,7 @@
       </button>
     </div>
 
+    <!-- icon buttons -->
     <div class="space-x-4 space-x-reverse my-8">
       <button
         type="button"
